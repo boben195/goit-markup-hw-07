@@ -1,0 +1,31 @@
+.list-whattodo {
+    display: flex;
+    gap: 30px;
+}
+
+.section-pad {
+    padding-top: 0px;
+    padding-bottom: 94px;
+}
+
+.position-whatwedo {
+    position: relative;
+}
+
+.position-text {
+    position: absolute;
+    bottom: 0;
+
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--therd-text-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    min-width: 370px;
+    min-height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+}

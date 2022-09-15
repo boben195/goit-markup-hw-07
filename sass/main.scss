@@ -5,3 +5,20 @@
 @import "./base/section";
 @import "./base/container";
 
+@import "./componets/logo";
+@import "./componets/portfolio-btn";
+
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/about";
+@import "./layout/whatWeDo";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/portfolio";
+@import "./layout/footer";
+
+@import "./componets/foot-form";
+@import "./componets/modal-backdrop";
+@import "./componets/modal-btn";
+@import "./componets/modal-form";
