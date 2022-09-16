@@ -1,8 +1,6 @@
 .modal-form-title {
   font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
+  @include font(20px, 700, 1.15);
   text-align: center;
   color: var(--secondary-text-color);
   margin-bottom: 12px;
@@ -20,11 +18,11 @@
   border-radius: 4px;
   padding-left: 42px;
   transition: border-color var(--transition-dur-and-funk);
-}
 
-.modal-form-input:focus {
-  outline: none;
-  border-color: var(--accent-color);
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
 }
 
 .modal-form-lab {
@@ -55,10 +53,10 @@
   display: block;
   fill: var(--secondary-text-color);
   transition: fill var(--transition-dur-and-funk);
-}
 
-.modal-form-input:focus + .modal-form-svg {
-  fill: var(--accent-color);
+  .modal-form-input:focus + & {
+    fill: var(--accent-color);
+  }
 }
 
 .modal-form-lab-text {
@@ -79,21 +77,17 @@
     outline: none;
     border-color: var(--accent-color);
   }
-}
 
-.modal-form-message::placeholder {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  &::placeholder {
+    font-style: normal;
+    @include font(12px, 400, 1.16);
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
 .modal-form-check {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %align;
   margin-bottom: 30px;
   line-height: calc(24 / 14);
 }
@@ -105,6 +99,15 @@
   border-radius: 2px;
   cursor: pointer;
   margin-right: 7px;
+
+  .modal-form-checkbox:checked + & {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+
+  .modal-form-checkbox:focus + & {
+    box-shadow: 0 0 0 1px var(--accent-color);
+  }
 }
 
 .modal-form-link {
@@ -114,17 +117,8 @@
 .modal-form-icon-use {
   display: none;
   fill: var(--therd-text-color);
-}
 
-.modal-form-checkbox:checked + .modal-form-icon {
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
-}
-
-.modal-form-checkbox:checked + .modal-form-icon .modal-form-icon-use {
-  display: block;
-}
-
-.modal-form-checkbox:focus + .modal-form-icon {
-  box-shadow: 0 0 0 1px var(--accent-color);
+  .modal-form-checkbox:checked + .modal-form-icon & {
+    display: block;
+  }
 }

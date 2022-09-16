@@ -35,10 +35,6 @@
   overflow: hidden;
 }
 
-.shadow-link:hover .overlay,
-.shadow-link:focus .overlay {
-  transform: translateY(0%);
-}
 
 .overlay {
   padding: 63px 24px;
@@ -56,6 +52,11 @@
   overflow: hidden;
   transform: translateY(100%);
   transition: transform var(--transition-dur-and-funk);
+
+  .shadow-link:hover &,
+  .shadow-link:focus & {
+    transform: translateY(0%);
+  }
 }
 
 .shadow-div {

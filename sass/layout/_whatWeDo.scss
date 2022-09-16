@@ -1,4 +1,4 @@
-.list-whattodo {
+.list__whatWeDo {
     display: flex;
     gap: 30px;
 }
@@ -8,11 +8,11 @@
     padding-bottom: 94px;
 }
 
-.position-whatwedo {
+.position__whatWeDo {
     position: relative;
 }
 
-.position-text {
+.position__text {
     position: absolute;
     bottom: 0;
 
@@ -21,9 +21,7 @@
     text-transform: uppercase;
     color: var(--therd-text-color);
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %align;
     margin: auto;
     min-width: 370px;
     min-height: 70px;

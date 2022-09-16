@@ -1,7 +1,5 @@
 .modal-close-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %align;
   position: absolute;
   top: 8px;
   right: 8px;
@@ -18,9 +16,13 @@
   }
 }
 
-.modal-close-icon:hover,
-.modal-close-icon:focus {
-  fill: var(--accent-color);
+.modal-close-icon {
+  fill: #000000;
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
 
 .modal-form-btn {
@@ -28,11 +30,8 @@
   color: var(--therd-text-color);
   background-color: var(--accent-color);
   font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
-  display: flex;
-  align-items: center;
+  @include font(16px, 700, 1.9);
+  @extend %align;
   text-align: center;
   align-self: center;
   letter-spacing: 0.06em;

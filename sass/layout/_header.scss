@@ -1,8 +1,8 @@
-.list-marg:not(:last-child) {
+.menu__part:not(:last-child) {
   margin-right: 50px;
 }
 
-.nav-link {
+.menu__link {
   color: var(--secondary-text-color);
   font-weight: 500;
   line-height: 1.14;
@@ -15,11 +15,11 @@
   }
 }
 
-.studio-link {
+.link--static {
   color: var(--accent-color);
 }
 
-.my-head .link-line::after {
+.my-head .link__line::after {
   position: absolute;
   bottom: 0;
   left: 30;
@@ -31,7 +31,7 @@
   border-radius: 2px;
 }
 
-.port-link::after {
+.link__port::after {
   position: absolute;
   bottom: 0;
   left: 30;
@@ -43,10 +43,8 @@
   border-radius: 2px;
 }
 
-.nav-addres {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.link__addres {
+  @extend %align;
   color: var(--primary-text-color);
   font-weight: 500;
   line-height: 1.14;
@@ -64,7 +62,7 @@
   align-items: center;
 }
 
-.nav-container {
+.navigation {
   display: flex;
   align-items: center;
 }
@@ -76,18 +74,18 @@
   position: relative;
 }
 
-.head-nav {
+.menu {
   display: flex;
   align-items: center;
 }
 
-.head-addres {
+.menu__addres {
   display: flex;
   align-items: center;
   margin-left: auto;
 }
 
-.svg-contact {
+.addres__svg {
   margin-right: 10px;
   fill: currentColor;
 }
