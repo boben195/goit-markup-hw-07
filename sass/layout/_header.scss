@@ -1,8 +1,8 @@
-.menu__item:not(:last-child) {
+.navigation__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.menu__link {
+.navigation__link {
   color: var(--secondary-text-color);
   font-weight: 500;
   line-height: 1.14;
@@ -74,12 +74,12 @@
   position: relative;
 }
 
-.menu {
+.navigation__menu {
   display: flex;
   align-items: center;
 }
 
-.menu__addres {
+.navigation__addres {
   display: flex;
   align-items: center;
   margin-left: auto;

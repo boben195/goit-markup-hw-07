@@ -398,18 +398,18 @@ ol {
   display: block;
 }
 
-.menu__item:not(:last-child) {
+.navigation__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.menu__link {
+.navigation__link {
   color: var(--secondary-text-color);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   transition: color var(--transition-dur-and-funk);
 }
-.menu__link:hover, .menu__link:focus {
+.navigation__link:hover, .navigation__link:focus {
   color: var(--accent-color);
 }
 
@@ -469,12 +469,12 @@ ol {
   position: relative;
 }
 
-.menu {
+.navigation__menu {
   display: flex;
   align-items: center;
 }
 
-.menu__addres {
+.navigation__addres {
   display: flex;
   align-items: center;
   margin-left: auto;
